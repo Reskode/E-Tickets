@@ -45,7 +45,7 @@ export default function Events() {
     <Container>
     <Row>
         <Col></Col>
-        <Col >Listes des evènements</Col>
+        <Col className="h4">Listes des evènements</Col>
         <Col xs={3}> <Button variant="outline-primary" onClick={handleShowCreate}>
             Créer un evènement
           </Button></Col>
@@ -53,52 +53,58 @@ export default function Events() {
     <br/>
       <Row>
         <Col>
-            <Card style={{ width: '20rem' }}>
+            <Card style={{ width: '20rem' }} bg="light" border="dark">
         <Card.Img variant="top" src={code} width={370} height={200}/>
         <Card.Body>
-            <Card.Title>Hackaton</Card.Title>
-            <Card.Text className="em" > <Icon.Calendar color="#008065"  />12/12/2022 | 7h30</Card.Text>
+            <Card.Header className="h4"> Soirée React</Card.Header>&nbsp;
+            <Card.Text className="em text-success h6" > <Icon.Calendar color="#008065" size={25} />&nbsp;12/12/2022 | 7h30</Card.Text>
+            <Card.Text className="em text-dark h6" > <Icon.PinMapFill color="#17a2b8" size={25}  />&nbsp;Salle oklm</Card.Text>
             <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
             </Card.Text>
-            <Button variant="primary" onClick={ handleShow}>Listes</Button>&nbsp;
+            <Button variant="primary" onClick={ handleShow}>Listes</Button>&nbsp;&nbsp;
             <Button variant="info" onClick= { showTickets } >Tickets</Button>
             <Button variant="light" onClick={ handleShowAlert}><Icon.Files color="#008065"  size={30}/>  </Button>
+            <Button  variant="light"><Icon.PencilSquare size={30} color="#1956b4"/></Button>
         </Card.Body>
         </Card>
         </Col>
         <Col>
-            <Card style={{ width: '20rem' }}>
+            <Card style={{ width: '20rem' }} bg="light" border="dark">
         <Card.Img variant="top" src={react} width={370} height={200}/>
         <Card.Body>
-            <Card.Title>Soirée React</Card.Title>
-            <Card.Text className="em" > <Icon.Calendar color="#008065"  />12/12/2022 | 7h30</Card.Text>
+            <Card.Header className="h4">Soirée React</Card.Header>&nbsp;
+            <Card.Text className="em text-success h6" > <Icon.Calendar color="#008065" size={25} />&nbsp;12/12/2022 | 7h30</Card.Text>
+            <Card.Text className="em text-dark h6" > <Icon.PinMapFill color="#17a2b8" size={25}  />&nbsp;Salle oklm</Card.Text>
             <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
             </Card.Text>
-            <Button variant="primary" onClick={ handleShow}>Listes</Button>&nbsp;
+            <Button variant="primary" onClick={ handleShow}>Listes</Button>&nbsp;&nbsp;
             <Button variant="info" onClick= { showTickets } >Tickets</Button>
             <Button variant="light" onClick={ handleShowAlert}><Icon.Files color="#008065"  size={30}/>  </Button>
+            <Button  variant="light"><Icon.PencilSquare size={30} color="#1956b4"/></Button>
         </Card.Body>
         </Card>
         </Col>
         <Col>
-            <Card style={{ width: '20rem' }}>
+            <Card style={{ width: '20rem' }} bg="light" border="dark">
         <Card.Img variant="top" src={ai} width={370} height={200}/>
         <Card.Body>
-            <Card.Title>Conférence Indabax</Card.Title>
-            <Card.Text className="em" > <Icon.Calendar color="#008065"  />12/12/2022 | 7h30</Card.Text>
-            <Card.Text>
+            <Card.Header className="h4">Conférence Indabax</Card.Header>&nbsp;
+            <Card.Text className="em text-success h6" > <Icon.Calendar color="#008065" size={25} />&nbsp;12/12/2022 | 7h30</Card.Text>
+            <Card.Text className="em text-dark h6" > <Icon.PinMapFill color="#17a2b8" size={25}  />&nbsp;Salle oklm</Card.Text>
+            <Card.Text className="justify">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
             </Card.Text>
-            <Button variant="primary" onClick={ handleShow}>Listes</Button> &nbsp;
+            <Button variant="primary" onClick={ handleShow}>Listes</Button> &nbsp;&nbsp;
             <Button variant="info" onClick= { showTickets } >Tickets</Button>
             <Button variant="light" onClick={ handleShowAlert}><Icon.Files color="#008065"  size={30}/>  </Button>
+            <Button  variant="light"><Icon.PencilSquare size={30} color="#1956b4"/></Button>
         </Card.Body>
-        </Card>
+        </Card><br/>
         </Col>
         
       </Row>

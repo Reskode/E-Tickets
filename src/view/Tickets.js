@@ -36,7 +36,7 @@ export default function Tickets() {
         <Icon.ArrowLeftSquareFill size={30} color="#1956b4"/>
           </Button>
         </Col><br/>
-        <Col >Listes des tickets</Col>
+        <Col className="h4">Listes des tickets</Col>
         <Col xs={3}> <Button variant="outline-primary" onClick={handleShowCreate}>
             Créer un ticket
           </Button></Col>

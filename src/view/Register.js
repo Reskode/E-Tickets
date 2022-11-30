@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link,useNavigate} from "react-router-dom"
 import { Form,Button,Container, Row, Col,InputGroup,FormControl } from "react-bootstrap";
 import * as Icon from 'react-bootstrap-icons';
 import React,{useState,useEffect} from 'react';
-import img from '../assets/img/login.png';
+import img from '../assets/img/register.png';
 
 
 export default function Register () {
@@ -36,8 +36,8 @@ export default function Register () {
 
       <Row>
         <Col></Col>
-        <Col xs={5}>
-        <img src={img} className="App-logo" alt="logo" width={370} height={250} />
+        <Col xs={4}>
+        <img src={img} className="App-logo" alt="logo" width={300} height={200} />
         </Col>
         <Col></Col>
       </Row>
